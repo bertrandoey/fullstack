@@ -1,0 +1,33 @@
+GET http://localhost:8000/products
+
+###
+GET http://localhost:8000/users
+
+###
+GET http://localhost:8000/users/1
+
+###
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "name": "Bertrand Ferrari",
+    "email": "bertrandoey05@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH http://localhost:8000/users/2
+Content-Type: application/json
+
+{
+    "name": "Angievel",
+    "email": "Angievel@gmail.com",
+    "gender": "Female"
+}
+
+###
+DELETE http://localhost:8000/users/2
+
+###
+POST http://localhost:8000/products
